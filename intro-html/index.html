@@ -1,96 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi primera web</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <table style="width: 500px;">
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hola beats</td>
-                <td>Gratis</td>
-            </tr>
-            <tr>
-                <td>Chanchito feliz</td>
-                <td>19,90$</td>
-            </tr>
-            <tr>
-                <td>Chanchito feliz muy feliz</td>
-                <td>29,90$</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <td></td>
-            <td>Total: 49.80$</td>
-        </tfoot>
-    </table>
-    <!-- ul es lista no ordenada -->
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ul>
-    <!-- ol es lista ordenada -->
-    <ol>
-        <li value="50">Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <li>
-            <ol>
-                <li style="list-style-type: lower-roman;">sub elemento 1</li>
-                <li style="list-style-type: lower-roman;">sub elemento 2</li>
-                <li style="list-style-type: lower-roman;">sub elemento 3</li>
-            </ol>
-        </li>
-    </ol>
-
-
-    <form action="/formulario" method="POST">
-        <label for="nombre">Nombre</label>
-        <input value="chanchito" type="text" id="nombre" name="lala" placeholder="Chanchito feliz..." />
-        <br>
-        <label for="apellido">Apellido</label>
-        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Chanchito triste..." />
-        <br>
-        <label for="comentario">Comentario</label>
-        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">este es un valor por defecto</textarea>
-        <br>
-        <button type="button">Tipo botón</button>
-        <button type="reset">Tipo reset</button>
-        <button type="submit">Tipo submit</button>
-    </form>
-    <h1>Mi primer heading</h1>
-    <h2>Mi segundo heading</h2>
-    <h3>Mi tercer heading</h3>
-    <h4>Mi cuarto heading</h4>
-    <h5>Mi quinto heading</h5>
-    <h6>Chanchito feliz</h6>
-    <p>Chanchito feliz está muy feliz.</p>
-    <p>Chanchito triste está muy triste.</p>
-    <hr>
-    <h2>Chanchito felipe</h2>
-    <p>
-        Este texto es <span style="color:blue">mucho más largo</span>
-        y es para mostrar <br><br>
-        la etiqueta de span!
-    </p>
-    <!-- este texto es un comentario y no va a
-    aparecer en el explorador -->
-    <a target="_blank" href="https://www.google.co.nz">Ir a google</a>
-    <img src="img/coffee.png" height="400" />
-    
+    <header id="titulo">
+        <h1 id="titulo">Blog de chanchito feliz</h1>
+    </header>
+    <section class="container">
+        <article class="post">
+            <h2>Título de mi post</h2>
+            <p>Descripción de mi post</p>
+            <img src="img/coffee.png" width="400" />
+            <p>Texto del artículo que hay acá y es texto de prueba. Chanchito feliz!</p>
+        </article>
+        <article class="post">
+            <h2>Título de mi post 2</h2>
+            <p>Descripción de mi post 2</p>
+            <img src="img/monster.png" width="400" />
+            <p>Texto del artículo que hay acá y es texto de prueba. Chanchito feliz!</p>
+        </article>
+        <article class="post">
+            <h2>Título de mi post 3</h2>
+            <p>Descripción de mi post 3</p>
+            <img src="img/guitarra.png" width="400" />
+            <p>Texto del artículo que hay acá y es texto de prueba. Chanchito feliz!</p>
+        </article>
+    </section>
+    <footer>
+        <section>
+        <a href="#titulo">Ir al comienzo</a>
+        <a href="mailto:nicolas@gmail.com">Contáctame aquí</a>
+        </section>
+        <p>Copyright 2021</p>
+    </footer>
 </body>
 </html>
