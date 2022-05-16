@@ -37,3 +37,39 @@ body {
     background-color: #000;
     height: 50px;
 }
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+
+    .encabezado {
+        background-color: rgb(246, 246, 243);
+    }
+
+    .contenido, .contenido-lateral {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+
+    .contenido, .contenido-lateral {
+        background-color: rgb(246, 246, 243);
+    }
+    .contenido, .contenido-lateral {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    .encabezado{
+        height: 80px;
+    }
+
+    .contenido {
+        background-color: rgb(250, 250, 168);
+    }
+
+    .contenido, .contenido-lateral {
+        width: 100%;
+    }
+}
